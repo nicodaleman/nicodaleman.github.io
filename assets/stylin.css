@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+  font-family: 'Catamaran', sans-serif;
+  background:#f7f7f7; /*White*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+
+}
+
+p{
+  color: #333; /*Black*/
+  text-align: left;
+}
+a{
+   text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333; /*Black*/
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+img:hover {
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+label{
+  color: #AAAAAA; /*Light Grey*/
+}
+
+footer {
+ color: #AAAAAA; /*Light Grey*/
+ background-color: #333; /*Black*/
+ text-align: right;
+ text-indent: 5px;
+ font-size: 14;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ }
+footer p {
+   color: #AAAAAA; /*Light Grey*/
+   margin-top: 1.5em;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: left;
+  /* vertical-align: middle; */
+}
+
+footer li {
+  text-decoration: none;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#Home {
+  background: none;
+  color: #333; /*Black*/
+  border: none;
+}
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+#allbar{
+  background-color: #333; /*Black*/
+  color: #AAAAAA; /*Light Grey*/
+  padding: 0;
+}
+#navigationbar{
+  padding: 0;
+  background-color: #333; /*Black*/
+  color: #AAAAAA; /*Light Grey*/
+}
+#opener{
+  background-color: #333; /*Black*/
+  color: #AAAAAA; /*Light Grey*/
+}
+#itson{
+  background:#f7f7f7; /*White*/
+  color: #2B8107; /*Green*/
+}
+
+#Works{
+  padding-top: 100px;
+}
+
+#myBtnContainer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+#selfportrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
+
+/* Sets the height of each section as a compelte page...*/
+.home-section {
+  position: relative;
+  height: 20vh;
+  padding-top: 50px;
+  background:url(Background.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.works-section {
+  position: relative;
+  height: 100vh;
+  padding-top: 150px;
+}
+
+.blog-section {
+  position: relative;
+  height: 100vh;
+  padding-top: 150px;
+}
+.about-section {
+  position: relative;
+  height: 100vh;
+  padding-top: 60px;
+}
+/* ...until here*/
+
+.well{
+  background-color: #f7f7f7; /*White*/
+  color: #AAAAAA; /*Light Grey*/
+  border: none;
+  border-top: none;
+
+}
+.navbar {
+  border: none;
+  color: #AAAAAA; /*Light Grey*/
+  margin-bottom: 0;
+  border-radius: 0;
+  text-align: left;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #AAAAAA; /*Light Grey*/
+}
+
+.panel{
+  border: none;
+  box-shadow: none;
+  border-color: none;
+
+}
+
+.panel > .panel-heading {
+  background-color:  #AAAAAA; /*Light Grey*/
+  color: #333; /*Black*/
+  border-radius: 0;
+}
+
+.panel > .panel-heading h3  {
+  text-align: left;
+}
+
+.panel > .panel-body {
+  background-color: #f7f7f7; /*White*/
+  color: #333; /*Black*/
+  border: none;
+  box-shadow: none;
+  border-color: none;
+
+}
+.top-buffer {
+  margin-top:50px;
+}
+
+/*Social media stuff*/
+
+/*.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}*/
+/*.list-inline li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}*/
+.social-icons .fa {
+	font-size: 1.8em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+  text decoration: none;
+	color: #AAA;
+}
+
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+  text decoration: none;
+	color: #AAA;
+}
+.social-icons .fa:hover, {
+	color: #FFF;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333;
+  text-decoration: none;
+}
+
+
+
+/*----- new stuff for filter.js–––––*/
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    display: none; /* Hide columns by default
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.elem {
+  /* outline: none; */
+  padding: 12px 16px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  text-align: center;
+  /* shadow: none;
+  border: none;
+  border-radius: 0;
+  text-decoration: none; */
+}
+
+/* Add a grey background color on mouse-over */
+/* .elem:hover {
+  background-color: #ddd;
+} */
+
+/* Add a dark background color to the active button */
+.elm.active {
+  shadow: none;
+  outline: none;
+  border: none;
+}
+
+button:focus {outline:0 !important;}
+
+
+/*----- other stuff for filter–––––*/
+
+
+
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+
+#portfoliolist .portfolio {
+	/* -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box; */
+	width:23%;
+	margin:10%;
+	display:none;
+	float:left;
+	overflow:hidden;
+
+}
+
+	.portfolio-wrapper {
+
+		position: relative !important;
+		background: #f7f7f7;
+		cursor:pointer;
+    padding-top: 10px;
+    max-width: 100%;
+    max-height: 100%;
+
+	}
+/*
+	.portfolio img {
+    max-width: 100%;
+    max-height: 100%;
+		position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    /* overflow:hidden; */
+		/* top:0; */
+    /* -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	} */
+  .portfolio:hover .label {
+    bottom:0;
+  }
+	.portfolio:hover img {
+    top:-30px;
+  }
+
+  .img-wrapper{
+	width: 100%;
+	padding-bottom: 100%;  /*your aspect ratio here!*/
+	position: relative;
+  overflow: hidden;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+
+}
+
+.img-wrapper img{
+  max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+	/* min-height: 100%;  optional: if you want the smallest images to fill the .thumbnail */ */
+}
+
+/*
+.social-icons .fa-adn{background-color:#504e54;}
+.social-icons .fa-apple{background-color:#aeb5c5;}
+.social-icons .fa-android{background-color:#A5C63B;}
+.social-icons .fa-bitbucket,.social-icons .fa-bitbucket-square{background-color:#003366;}
+.social-icons .fa-bitcoin,.social-icons .fa-btc{background-color:#F7931A;}
+.social-icons .fa-css3{background-color:#1572B7;}
+.social-icons .fa-dribbble{background-color:#F46899;}
+.social-icons .fa-dropbox{background-color:#018BD3;}
+.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3b5998;}
+.social-icons .fa-flickr{background-color:#FF0084;}
+.social-icons .fa-foursquare{background-color:#0086BE;}
+.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
+.social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;}
+.social-icons .fa-html5{background-color:#E54D26;}
+.social-icons .fa-instagram{background-color:#A1755C;}
+.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;}
+.social-icons .fa-linux{background-color:#FBC002;color:#333;}
+.social-icons .fa-maxcdn{background-color:#F6AE1C;}
+.social-icons .fa-pagelines{background-color:#241E20;color:#3984EA;}
+.social-icons .fa-pinterest,.social-icons .fa-pinterest-square{background-color:#CC2127;}
+.social-icons .fa-renren{background-color:#025DAC;}
+.social-icons .fa-skype{background-color:#01AEF2;}
+.social-icons .fa-stack-exchange{background-color:#245590;}
+.social-icons .fa-stack-overflow{background-color:#FF7300;}
+.social-icons .fa-trello{background-color:#265A7F;}
+.social-icons .fa-tumblr,.social-icons .fa-tumblr-square{background-color:#314E6C;}
+.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
+.social-icons .fa-vimeo-square{background-color:#229ACC;}
+.social-icons .fa-vk{background-color:#375474;}
+.social-icons .fa-weibo{background-color:#D72B2B;}
+.social-icons .fa-windows{background-color:#12B6F3;}
+.social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;}
+.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+*/

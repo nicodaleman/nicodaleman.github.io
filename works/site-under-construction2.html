@@ -1,0 +1,68 @@
+<!-- ---
+layout: none
+title: Site Under Construction
+---
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+
+  </head>
+  <body>
+          <div id="container">
+
+            <h1 style="text-align: center; font-size: 500%"> Site Under Construction </h1>
+              <p style="text-align: center; font-size: 200%">Places are changing constantly. Nowhere is this more evident than in the ephemerality of the websites, where pages are being re-constructed, modified and updated constantly. As a mean for communication, internet sounds are also a defining part of the experience of cyberspaces, and the way we perceive soundscapes in virtual experience is also prone instability. Site under construction is a sound installation about the perception of sonic spaces over the internet, not by recontextualizing the sounds found on the internet, but rather by recontextualizing the physical spaces we experience: A sonic impression of this gallery is streamed to another place in Berlin, reproduced through speakers, re-recorded and streamed back to the Gallery, where the result is audible through the headphones, allowing for clear comparison between the physical space and the virtual space, modulating between them. Compression, delay and background noises of the other space will be made evident and accentuated through subtle signal processing. Each day that the exhibition is running there will be a different set up for the other space, creating a piece that is again, being re-constructed modified, and updated constantly. As part of the small print in the virtual world, this website that you are visiting (www.nicodaleman.com/site-under-construction.html) is also in constant development, and will serve as a documentation of the process of the piece. </p>
+              <!-- index.html -->
+
+          </div>
+          <script type="text/javascript" src="/assets/js/xebra-state.js"></script>
+          <script type="text/javascript">
+
+            var options = {
+                hostname : "127.0.0.1", //IP under mywebspot
+                port : 8086,
+                supported_objects : ["button"]
+            };
+
+            var xebraState = new Xebra.State(options);
+
+            // Do something when a button gets added to the Max patcher
+            xebraState.on("object_added", function(object) {
+                if (object.type === "button") addHTMLButton(object);
+            });
+
+            // Do something when a button is removed
+            xebraState.on("object_removed", function(object) {
+                if (object.type === "button") removeHTMLButton(object);
+            });
+
+            xebraState.on("connection_changed", function (status) {
+              console.log("Connection status:", status);
+            });
+
+            function addHTMLButton(object) {
+                var newButton = document.createElement("button");
+                newButton.id = "button-" + object.id;
+                newButton.onmousedown = function() {
+                    object.setParamValue("value", 1);
+                };
+                newButton.onmouseup = function() {
+                    object.setParamValue("value", 0);
+                };
+                newButton.appendChild(document.createTextNode("Button " + object.id));
+                document.getElementById("container").appendChild(newButton);
+            }
+
+            function removeHTMLButton(object) {
+                var button = document.getElementById("button-" + object.id);
+                button.parentNode.removeChild(button);
+            }
+
+            xebraState.connect();
+
+        </script>
+  </body>
+  </html>
