@@ -24,7 +24,9 @@ p{
 }
 a{
    text-decoration:none;
+ /* no underline */
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   color: #333; /*Black*/
@@ -50,6 +52,14 @@ img:hover {
 
 label{
   color: #AAAAAA; /*Light Grey*/
+}
+
+
+navbar-header a {
+  text-decoration: none;
+  color: #AAAAAA !important;
+
+  /* vertical-align: middle; */
 }
 
 footer {
