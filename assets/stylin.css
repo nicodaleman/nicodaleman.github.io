@@ -452,8 +452,8 @@ button:focus {outline:0 !important;}
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }/*
 .social-icons .fa-adn{background-color:#504e54;}
 .social-icons .fa-apple{background-color:#aeb5c5;}
