@@ -15,7 +15,6 @@ body{
   width: 100%;
   height: 100%;
   padding-top: 0px;
-
 }
 
 p{
@@ -23,8 +22,12 @@ p{
   text-align: left;
 }
 a{
-   text-decoration:none;
- /* no underline */
+   text-decoration: none;
+   color: #AAAAAA;
+}
+a:hover {
+  text-decoration: none;
+  color: #AAAAAA;
 }
 
 
@@ -37,7 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 li {
   list-style-type: none;
   text-decoration: underline;
+  color: #AAAAAA;
 }
+
 
 img {
     max-width: 100%;
@@ -51,17 +56,17 @@ img:hover {
     -webkit-filter: grayscale(0%);
 }
 
-label{
-  color: #AAAAAA; /*Light Grey*/
-}
 
-
-navbar-header a {
-  text-decoration: none;
+.navbar-header a, h3, h5 {
   color: #AAAAAA !important;
-
-  /* vertical-align: middle; */
+  text-decoration: none;
 }
+
+nav ul>a:hover{
+  color: #AAAAAA !important;
+  text-decoration: none;
+}
+
 
 footer {
  color: #AAAAAA; /*Light Grey*/
@@ -103,28 +108,10 @@ footer li {
   padding-bottom: 100px;
 }
 
-#allbar{
-  background-color: #333; /*Black*/
-  color: #AAAAAA; /*Light Grey*/
-  padding: 0;
-}
-#navigationbar{
-  padding: 0;
-  background-color: #333; /*Black*/
-  color: #AAAAAA; /*Light Grey*/
-}
-#opener{
-  background-color: #333; /*Black*/
-  color: #AAAAAA; /*Light Grey*/
-}
-#itson{
-  background:#f7f7f7; /*White*/
-  color: #2B8107; /*Green*/
-}
-
 #Works{
   padding-top: 100px;
 }
+
 
 #myBtnContainer{
     display: flex;
@@ -140,7 +127,7 @@ footer li {
 
   }
 
-  .img-container {
+.img-container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -187,18 +174,10 @@ footer li {
 
 }
 .navbar {
-  border: none;
   color: #AAAAAA; /*Light Grey*/
-  margin-bottom: 0;
-  border-radius: 0;
-  text-align: left;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #AAAAAA; /*Light Grey*/
+  text-decoration: none;
+  background-color: #333; /*Black*/
+  border-radius: 0px;
 }
 
 .panel{
@@ -232,16 +211,6 @@ footer li {
 
 /*Social media stuff*/
 
-/*.list-unstyled {
-	padding-left: 0;
-	list-style: none;
-}*/
-/*.list-inline li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px;
-}*/
 .social-icons .fa {
 	font-size: 1.8em;
 }
@@ -334,10 +303,6 @@ footer li {
   text-decoration: none; */
 }
 
-/* Add a grey background color on mouse-over */
-/* .elem:hover {
-  background-color: #ddd;
-} */
 
 /* Add a dark background color to the active button */
 .elm.active {
@@ -396,20 +361,7 @@ button:focus {outline:0 !important;}
     max-height: 100%;
 
 	}
-/*
-	.portfolio img {
-    max-width: 100%;
-    max-height: 100%;
-		position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    /* overflow:hidden; */
-		/* top:0; */
-    /* -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-	} */
+
   .portfolio:hover .label {
     bottom:0;
   }
