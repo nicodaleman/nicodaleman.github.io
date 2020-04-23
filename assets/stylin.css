@@ -20,6 +20,7 @@ body{
 p{
   color: #333; /*Black*/
   text-align: left;
+  font-size: 16px;
 }
 a{
    text-decoration: none;
@@ -57,10 +58,6 @@ img:hover {
 }
 
 
-.navbar-header a, h3, h5 {
-  color: #AAAAAA !important;
-  text-decoration: none;
-}
 
 nav ul>a:hover{
   color: #AAAAAA !important;
@@ -111,6 +108,7 @@ footer li {
 #Works{
   padding-top: 100px;
 }
+
 
 
 #myBtnContainer{
@@ -178,6 +176,12 @@ footer li {
   text-decoration: none;
   background-color: #333; /*Black*/
   border-radius: 0px;
+  min-height: 80px;
+}
+
+.navbar-header a, h3, h5 {
+  color: #AAAAAA !important;
+  text-decoration: none;
 }
 
 .panel{
@@ -264,7 +268,7 @@ footer li {
 .column {
     float: left;
     width: 25%;
-    display: none; /* Hide columns by default
+    /*display: none;  Hide columns by default
     -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -361,6 +365,10 @@ button:focus {outline:0 !important;}
     max-height: 100%;
 
 	}
+
+  .portfolio-wrapper p {
+    font-size: 14px;
+  }
 
   .portfolio:hover .label {
     bottom:0;
