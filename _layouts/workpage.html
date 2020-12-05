@@ -3,25 +3,16 @@
 
   {% include headworks.html %}
 
-  <body>
-    <div id= "wrapper">
-    {% include navbarworks.html %}
+<body>
 
-      <div class="container" id="Works">
-        <div class="row">
-          <h1> {{ page.title }} </h1>
-        </div>
-      </div>
+  {% include headerworks.html %}
 
-<div class="container" id="worksmain">
-
-
-      {{ content }}
-
+<div class="work-content">
+  <h2> {{ page.title }} </h2>
+    {{ content }}
 </div>
 
-    {% include footer.html %}
-  </div>
+  {% include footer.html %}
 
   </body>
 
