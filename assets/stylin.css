@@ -85,6 +85,8 @@ h3 { font-size: var(--fs-h3) }
 
 li{
   text-decoration: none;
+  list-style-type: none;
+  text-align: left;
 }
 
 p{
@@ -249,7 +251,7 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
-About
+/*About*/
 
 .about-section{
     max-width: 1250px;
@@ -366,6 +368,52 @@ About
   align-content: center;
   margin: 0 auto;
 
+}
+
+/*radio*/
+
+.radio-section{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "title"
+      "body img"
+      "body img";
+}
+
+/* .radio-img{
+  padding: 1em;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 60%;
+
+} */
+
+@media (min-width: 600px) {
+    .radio-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+          "title title"
+          "body img"
+          "body img";
+        grid-column-gap: 1em;
+    }
+
+    .radio-section-img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+        padding: 1em;
+        align-content: center;
+        margin: 0 auto;
+         /* max-width: 60%; */
+    }
+    .radio-section-body{
+      grid-area: body;
+    }
 }
 
 /* footer */
