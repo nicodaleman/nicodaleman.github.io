@@ -43,7 +43,7 @@
 }
 
 body{
-  background: var(--clr-light);
+  background: #333 /*var(--clr-light);*/
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
