@@ -298,6 +298,13 @@ header {
 .works {
   background-color: var(--clr-light);
 }
+.works-text{
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 2em 2em;
+  /* min-height: calc(100vh - 125px); */
+  align-content: center;
+}
 
 .portfolio{
   display: grid;
